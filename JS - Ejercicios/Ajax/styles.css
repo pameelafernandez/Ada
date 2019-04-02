@@ -1,0 +1,14 @@
+body{
+    background-color: magenta;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+#photo{
+    display: inline-block;
+    margin-left: 10%;
+}
+.info {
+    display: inline-block;
+    margin-left: 15%;
+}

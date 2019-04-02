@@ -1,0 +1,46 @@
+.pag {
+  width: 100%;
+  height: 100px;
+  background-color: silver;
+  display: flex;
+}
+
+.main {
+  width: 80%;
+  height: 800px;
+  background-color: plum;
+  margin: auto;
+}
+
+.carousel {
+  width: 80%;
+  height:200px;
+  background-color: pink;
+  margin: 5%;
+}
+
+.linea {
+  border-bottom: 2px solid black;
+}
+.imgs {
+  display: flex;
+  justify-content: center;
+}
+.img {
+  background-color: magenta;
+  width: 20%;
+  height: 150px;
+  margin: 2%;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tit {
+  background-color: hotpink;
+  width: 40%;
+  height: 350px;
+  margin: 2%;
+}

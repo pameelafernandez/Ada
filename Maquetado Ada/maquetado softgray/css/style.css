@@ -1,0 +1,47 @@
+nav {
+  width: 100%;
+  display: flex;
+  margin-top: 1%;
+}
+nav span {
+  margin-left: 10%;
+}
+nav .list-container {
+  list-style: none;
+  display: flex;
+  margin-left: 25%;
+}
+nav li {
+  padding-left: 20px;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: blueviolet;
+  padding: 7%;
+}
+section h1 {
+  text-align: center;
+}
+
+.col {
+  width: 100%;
+  background-color: aqua;
+}
+.col img {
+  border-radius: 50%;
+}
+.col span {
+  color: beige;
+}
+
+.row div {
+  display: flex;
+  flex-direction: column;
+}
+.row span {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

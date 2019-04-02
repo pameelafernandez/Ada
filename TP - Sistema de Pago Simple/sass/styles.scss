@@ -1,0 +1,73 @@
+body{
+    color: #fafafa;
+    font-family: 'Inconsolata', monospace;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+}
+header{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: palegreen;
+    border: solid 3px #fafafa;
+    border-radius: 40px;
+    h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .usuario{
+        margin-left: 40px;
+        .error{
+            display: none;
+        }
+    }
+    .contenedor-principal {
+        display: none;
+        margin-left: 40px;
+    }
+}
+.container{
+    display: none;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: palegreen;
+    padding: 2%;
+    border-radius: 40px;
+    border: solid 3px #fafafa;
+}
+.pagar{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: palegreen;
+    padding: 2%;
+    border-radius: 40px;
+    border: solid 3px #fafafa;
+    p{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+button{
+    background-color: #fafafa;
+    color: springgreen;
+    width: 140px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid springgreen;
+}
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid springgreen;
+}
+.lista{
+    .listaProductos{
+        font-size: 25px;
+    }
+    #miLista{
+        display: flex;
+        flex-direction: column;
+    }
+}

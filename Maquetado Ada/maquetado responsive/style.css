@@ -1,0 +1,61 @@
+.logo1 {
+  display: none;
+}
+
+.cerveza {
+  display: none;
+}
+
+.logo2 {
+  display: block;
+  background-color: sienna;
+  height: 150px;
+  display: inline-block;
+}
+
+.cafe {
+  height: 150px;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  display: inline-block;
+}
+
+.fa-coffee {
+  font-size: 150px;
+}
+@media (max-width: 800px) {
+  .logo1 {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: block;
+    background-color: DarkTurquoise;
+  }
+
+  .fa-beer {
+    font-size: 150px;
+    color: GoldenRod;
+  }
+
+  .cerveza {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    display: block;
+  }
+
+  p {
+    font-size: 100px;
+    color: GoldenRod;
+  }
+
+  .logo2 {
+    display: none;
+  }
+
+  .cafe {
+    display: none;
+  }
+
+}

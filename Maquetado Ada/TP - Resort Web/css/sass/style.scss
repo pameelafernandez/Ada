@@ -1,0 +1,241 @@
+// LINKS
+$link-bgcolor: rgb(68, 196, 126);
+$link-color: white;
+$link-hover-bgcolor: grey;
+// HEADER
+$header-link-border-color: aquamarine;
+$header-link-gradient-pr: #07a245; // PRIMARY COLOR
+$header-link-gradient-sec: #64a992; // SECONDARY COLOR
+$header-link-hover-color: rgb(48, 48, 48);
+// CONTENT
+$title-color: rgb(42, 128, 80);
+$testimonial-title-color: rgb(53, 167, 104);
+$latest-title-color: rgb(42, 128, 80);
+$section-bgcolor: antiquewhite;
+$left-width: 70%;
+// FOOTER
+$footer-bgcolor: grey;
+$footer-link-bgcolor: transparent;
+$footer-link-color: black;
+$footer-link-hover-color: white;
+@mixin gradient($colorA, $colorB) {
+    background-image: linear-gradient($colorA, $colorB);
+}
+
+@mixin no-gradient() {
+    background-image: none;
+}
+
+@mixin link-header-border() {
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: $header-link-border-color;
+    @include gradient($header-link-gradient-pr, $header-link-gradient-sec);
+}
+
+body {
+    margin: auto;
+    max-width: 1200px;
+    background: url('../images/background.jpg');
+    .container {
+        margin: 0 10px;
+    }
+}
+
+.link {
+    padding: 1rem;
+    background-color: $link-bgcolor;
+    display: block;
+    color: $link-color;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+        background-color: $link-hover-bgcolor;
+        color: $header-link-hover-color
+    }
+}
+
+.img-container {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.point-line {
+    border-bottom: 1px dotted grey;
+}
+
+header {
+    margin: 1rem 0;
+    .img-container {
+        margin-bottom: 1rem;
+    }
+    .list-container {
+        margin: 1rem 0;
+    }
+    .list-item {
+        &:last-child {
+            .link {
+                border-width: 1px;
+            }
+        }
+    }
+    .link {
+        @include link-header-border();
+        &:hover {
+            border-color: $link-color;
+            @include no-gradient();
+        }
+    }
+}
+
+header,
+footer {
+    display: inline-block;
+    width: 100%;
+    nav {
+        display: flex;
+    }
+}
+
+.list-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    .list-item {
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    .description {
+        h2 {
+            color: $title-color;
+        }
+        p {
+            line-height: 1.5rem;
+        }
+    }
+    .subcontent {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.left {
+    width: $left-width;
+    margin-right: 1rem;
+    .title {
+        color: $latest-title-color;
+        margin: 0;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    section {
+        padding: 1rem;
+        background-color: $section-bgcolor;
+        margin-bottom: 1rem;
+    }
+}
+
+section {
+    article {
+        display: inline-block;
+        position: relative;
+        h4 {
+            font-size: 1.2em;
+            font-weight: normal;
+            margin: 8px 0 4px;
+        }
+        time {
+            font-size: 0.85em;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .author {
+            position: absolute;
+            right: 0;
+            bottom: 5px;
+        }
+        .author,
+        p {
+            line-height: 1.5em;
+        }
+        q {
+            &:before,
+            &:after {
+                content: none;
+            }
+            color: $testimonial-title-color;
+        }
+    }
+    .testimonials {
+        .title {
+            color: $testimonial-title-color;
+        }
+    }
+}
+
+footer {
+    background-color: $footer-bgcolor;
+    display: flex;
+    justify-content: space-between;
+    nav {
+        width: $left-width;
+        margin: 5px 0;
+    }
+    .social-media {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: 1rem;
+        .link {
+            padding: 0;
+        }
+        .icon-container {
+            margin-right: 10px;
+            .fab {
+                font-size: 1.8em;
+            }
+        }
+    }
+    .link {
+        padding: 0.8rem 0;
+        background-color: $footer-link-bgcolor;
+        color: $footer-link-color;
+        text-transform: uppercase;
+        &:hover {
+            color: $footer-link-hover-color;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .left {
+        width: 100%;
+    }
+    .subcontent,
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        nav {
+            display: none;
+        }
+    }   .social-media {
+        margin: auto;
+    }
+   
+}

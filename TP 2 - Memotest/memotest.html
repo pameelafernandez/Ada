@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/memotest.css">
+    <title>MemoTest</title>
+</head>
+<body>
+<!-- User Login / Login del Usuario ♥ -->
+    <section class="hello">
+            <p class="title">Memotest</p>
+            <p><b>Hello! <i class="em em-wave"></i></b>Let's play <b>Memotest</b></p><p> But before you start...<i class="em em-banana"></i></p><p>What's your name??<i class="em em-thinking_face"></i></i></p>
+            <input type="text" placeholder="Name" id="name">
+            <div class="difficulty">
+                <p><b>What difficulty would you like to pay with?</b></p>
+                <a href="#easy"><button id="easy" class="buttonDifficulty">EASY</button></a>
+                <a href="#medium"><button id="medium" class="buttonDifficulty">MEDIUM</button></a>
+                <a href="#expert"><button id="expert" class="buttonDifficulty">EXPERT</button></a>
+            </div>
+            <div class="ups" id="ups">
+              <p><b>Upss...!</b> The name is required!<i class="em em-grimacing"></i></p>
+            </div>
+    </section>
+<!-- Game Board / Tablero de Juego ♥ -->
+    <section class="gameBoard">
+      <div class="game">
+        <p class="title">Memotest</p>
+        <p id="helloUser"></p>
+        <div id="numberAttempts"></div>
+        <div id="level"></div>
+      </div>
+      <div class="gameCards"></div>
+      <div class="attempts">
+        <p id="attemptsNumber">Attempts: </p>
+      </div>
+      <div class="finalGame hidden">
+        <div class="message"></div>
+        <div id="ranking"></div>
+        <div class="boton"></div>
+      </div>
+    </section>
+<!-- Scripts  <3 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="js/memotest.js"></script>
+</body>
+</html>

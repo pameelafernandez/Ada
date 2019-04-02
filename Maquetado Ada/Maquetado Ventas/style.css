@@ -1,0 +1,41 @@
+.uno {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid white;
+  width: 100%;
+
+}
+
+.estado {
+  background-color: limegreen;
+  color: white;
+  position: static;
+  width: 100px;
+  height: 20px;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.email {
+  color: DodgerBlue;
+}
+
+.texto {
+  margin-left: 10px;
+}
+
+@media(max-width:800px) {
+  .estado {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .uno{
+    position: relative;
+  }
+}

@@ -1,0 +1,65 @@
+.menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.menu .azul {
+  color: blue;
+}
+
+.titulo {
+  margin-left: 20px;
+}
+.titulo h3 {
+  font-family: Helvetica;
+}
+.titulo input {
+  width: 36%;
+  padding: 4px;
+  color: grey;
+}
+
+.imgs h3 {
+  font-family: Helvetica;
+  margin-left: 20px;
+}
+
+.imgs .img {
+  display: inline-block;
+  margin-left: 20px;
+  border: 2px solid grey;
+  padding: 35px;
+  font-size: 30px;
+  color: grey;
+}
+
+.edad {
+  margin-left: 20px;
+  font-family: Helvetica;
+}
+.edad input {
+  width: 18%;
+  padding: 4px;
+  color: grey;
+}
+
+.boton {
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.boton input {
+  width: 10%;
+  padding: 4px;
+  color: grey;
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */

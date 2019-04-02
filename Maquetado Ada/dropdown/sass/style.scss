@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    .menu-container {
+        position: absolute;
+        right: 0;
+        top: calc(50% - 33px);
+    }
+    .img-container {
+        img {
+            width: 100px;
+        }
+    }
+}
+
+.dropdown-container {
+    position: relative;
+    right: 0;
+    .link {
+        &:first-child {
+            display: inline-block;
+        }
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+    &:hover .dropdown-content {
+        display: block;
+    }
+}
+
+.img-container {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.link {
+    padding: 1rem;
+    display: block;
+    font-size: 2rem;
+    &:hover {
+        color: blue;
+    }
+}

@@ -1,0 +1,14 @@
+.game .numero {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border: 2px solid white;
+    display: inline-block;
+}
+.game .numero span {
+    display: none;
+}
+
+.game .numero.mostrar span {
+    display: block;
+}

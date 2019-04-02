@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+}
+header .menu-container {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 33px);
+}
+header .img-container img {
+  width: 100px;
+}
+
+.dropdown-container {
+  position: relative;
+  right: 0;
+}
+.dropdown-container .link:first-child {
+  display: inline-block;
+}
+.dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.link {
+  padding: 1rem;
+  display: block;
+  font-size: 2rem;
+}
+.link:hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
